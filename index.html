@@ -1,24 +1,41 @@
 <html>
 <head>
+    <style>
+        .wrapper {
+            display:block;
+            float:left;
+            width:50%;
+        }
+
+        .videoInsert {
+            width: auto; 
+            height: auto; 
+            height:100%;
+            width:100%;
+            z-index: -100;
+            background-size: cover;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-<div style="display: block; float:left; width:50%;">
-    <video autoplay=1 controls>
+<div class="wrapper">
+    <video autoplay controls class="videoInsert">
         <source src="playlist1.m3u8" type="application/x-mpegURL">
     </video>
 </div>
-<div style="display: block; float:left; width:50%;">
-    <video autoplay=1 controls>
+<div class="wrapper">
+    <video autoplay controls class="videoInsert">
         <source src="playlist2.m3u8" type="application/x-mpegURL">
     </video>
 </div>
-<div style="display: block; float:left; width:50%;">
-    <video autoplay=1 controls>
+<div class="wrapper">
+    <video autoplay controls class="videoInsert">
         <source src="playlist3.m3u8" type="application/x-mpegURL">
     </video>
 </div>
-<div style="display: block; float:left; width:50%;">
-    <video autoplay=1 controls>
+<div class="wrapper">
+    <video autoplay controls class="videoInsert">
         <source src="playlist4.m3u8" type="application/x-mpegURL">
     </video>
 </div>
